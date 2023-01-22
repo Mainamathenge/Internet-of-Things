@@ -231,8 +231,7 @@ if __name__ == '__main__':
     client.will_set(topic="REQUEST INIT", payload="terminated")
     # client.birth
     client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
-    client.username_pw_set("Vincent Mworia", "mwendamworia")
-    client.connect("8a32997794c84b92a769a6a46bb1582f.s1.eu.hivemq.cloud", 8883)
+
 
     client.on_connect = on_connect
     client.on_subscribe = on_subscribe
