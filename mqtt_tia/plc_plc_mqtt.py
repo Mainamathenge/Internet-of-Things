@@ -180,8 +180,6 @@ if __name__ == '__main__':
               client = paho.Client(client_id="", userdata=None,
                                            protocol=paho.MQTTv5)
               client.on_connect = on_connect
-              #client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
-              #client.username_pw_set("mainamathengej@gmail.com", "wakaHATOLI001")
               client.connect("test.mosquitto.org", 1883)
               client.on_subscribe = on_subscribe
               client.on_message = on_message
